@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<title>HTML Tutorial</title>
+</head>
+<body>
+
+	<ul>
+		<li><a class="active" href="#search">Search</a></li>
+		<li><a href="#admin">Admin</a></li>  
+	</ul>
+	<div class="row">
+		<div class="column-2">
+			<div class="search-criteria top-margin thin-bottom">
+				<li class="criteria">Brand</li><br><br>
+				<input type="checkbox" name="brand" value="Apple">Apple<br>
+				<input type="checkbox" name="brand" value="HP">HP<br>
+				<input type="checkbox" name="brand" value="Acer">Acer<br>
+			</div>
+			<div class="search-criteria thin-top thin-bottom">
+				<li class="criteria">CPU</li><br><br>
+				<input type="checkbox" name="cpu" value="i7">i7<br>
+				<input type="checkbox" name="cpu" value="i5">i5<br>
+				<input type="checkbox" name="cpu" value="i3">i3<br>
+			</div>
+			<div class="search-criteria thin-top thin-bottom">
+				<li class="criteria">Hard Drive</li><br><br>
+				<input type="text" id="min-cap" size="5" placeholder="min"> to
+				<input type="text" id="min-cap" size="5" placeholder="max"> TB
+			</div>
+			<div class="search-criteria thin-top">
+				<li class="criteria">Price</li><br><br>
+				<input type="text" size="5" placeholder="min"> to
+				<input type="text" size="5" placeholder="max"> $
+			</div>
+		</div>
+		<div class="column-8">			
+			<div class="data-panel top-margin">
+				<div class="row">
+					<div class="column-8">
+						Items
+					</div>
+					<div class="column-2 ">
+						<div class="class="right-align"">
+							Sort By : 
+							<select name="sortBy">
+								<option value="price">Price</option>
+								<option value="cpu">CPU</option>
+								<option value="hdd">HDD</option>    
+							</select>
+						</div>
+					</div>
+				</div>				
+				<div class="row">
+					<div class="box fill-blue">selected criteria</div>
+				</div>
+				<div class="row table-header">
+					<div class="column-3 cell-border">
+						<div class="box fill-blue">Model</div>
+					</div>
+					<div class="column-3 cell-border">
+						<div class="box fill-blue">Specs</div>
+					</div>
+					<div class="column-3 cell-border">
+						<div class="box fill-blue">Price</div>
+					</div>
+					<!-- <div class="column-3 cell-border">
+						<div class="box fill-blue">HP Probook1</div>
+					</div>
+					<div class="column-3 cell-border">
+						<div class="box fill-blue">Intel i7/4GB/1TB HDD/ Black</div>
+					</div>
+					<div class="column-3 cell-border">
+						<div class="box fill-blue">$699</div>						
+					</div> -->					
+				</div>
+				<div class="flat-row table-content"></div>
+			</div>
+			
+		</div>
+	</div>	
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		init();
+	</script>
+</body>
+</html>

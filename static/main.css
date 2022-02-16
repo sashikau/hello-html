@@ -1,0 +1,15 @@
+@media(min-width:992px) {
+  .navbar {
+    height: 8%;
+  }
+
+  .content {
+    height: 92%;
+  }
+}
+
+@media(min-width:500px) {
+  .navbar-collapse {
+    padding-left: 3%;
+  }
+}

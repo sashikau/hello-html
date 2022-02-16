@@ -4,7 +4,7 @@ export default class extends AbstractView {
 
   constructor() {
     super();
-    this.setTitle('Sashika | Home');
+    this.setTitle('Sashika | Developer');
   }
 
   getHtml() {

@@ -47,3 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   router();
 });
+
+$('.navbar-toggler').click(function () {
+  if ($('.navbar').hasClass('menu-expand')) {
+    $('#app').removeClass('content-menu-expand');
+    $('.navbar').removeClass('menu-expand');
+  } else {
+    $('.navbar').addClass('menu-expand');
+    $('#app').addClass('content-menu-expand');
+  }
+});

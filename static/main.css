@@ -1,10 +1,22 @@
+.link, .link:hover, .link:visited {
+  color: white;
+}
+
+.navbar {
+  background-color: #383838;
+}
+
+.navbar-toggler {
+  background-color: #181818;
+}
+
 @media(min-width:992px) {
   .navbar {
-    height: 8%;
+    height: 8% !important;
   }
 
   .content {
-    height: 92%;
+    height: 92% !important;
   }
 }
 
@@ -12,4 +24,21 @@
   .navbar-collapse {
     padding-left: 3%;
   }
+
+  .navbar {
+    height: 10%;
+  }
+
+  .content {
+    height: 90%;
+  }
+}
+
+
+.menu-expand {
+  height: 40%;
+}
+
+.content-menu-expand {
+  height: 60%;
 }

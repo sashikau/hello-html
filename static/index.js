@@ -1,4 +1,7 @@
 import HomeComponent from './components/home/home-component.js';
+import AboutMeComponent from './components/about-me/about-me-component.js';
+import ContactMeComponent from './components/contact-me/contact-me-component.js';
+import ProjectsComponent from './components/projects/projects-component.js';
 
 const navigateTo = url => {
   history.pushState(null, null, url);
@@ -6,10 +9,10 @@ const navigateTo = url => {
 }
 const router = async () => {
   const routes =[
-    { path: "/", view: HomeComponent}
-    // ,
-    // { path: "/posts", view: () => console.log("posts")},
-    // { path: "/settings", view: () => console.log("set")}
+    { path: "/", view: HomeComponent},
+    { path: "/about-me", view: AboutMeComponent},
+    { path: "/contact-me", view: ContactMeComponent},
+    { path: "/projects", view: ProjectsComponent}
   ];
 
 
@@ -41,7 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener('click', e =>{
     if(e.target.matches('[data-link]')){
       e.preventDefault();
+      console.log('--------------', e.target.href);
       navigateTo(e.target.href);
+    }
+    else{
+      console.log('Else--------------', e.target.href);
     }
   })
 
